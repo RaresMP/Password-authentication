@@ -1,13 +1,4 @@
 # Password-authentication
 This is a Python function that prompts the user to enter a password and checks if it meets certain requirements.
 
-The password must be at least 10 characters long and must match the string "parolaparola". 
-If the user enters a password that is too short (less than 4 characters), the function informs the user that their password is too short and decrements
-the "tries" counter by 1. If the user enters a password that is between 4 and 10 characters long, the function informs the user that their password is too short
-and decrements the "tries" counter by 1. If the user enters a password that is not "parolaparola" and is longer than 10 characters, the function informs the user
-that their password is wrong and decrements the "tries" counter by 1.
-
-If the user enters the correct password ("parolaparola"), the function prints "You're logged in!" and returns True, indicating that the login was successful. 
-If the user runs out of tries (the "tries" counter reaches 0), the function prints "Try again tomorrow".
-
-Overall, this function is an example of password authentication logic in Python.
+This code follows a simple control flow: the function prompts the user to enter a password, checks if the password is correct, and either logs the user in (if the password is correct), informs the user their password is wrong (if the password is incorrect), or informs the user their password is too short (if the password is too short). The function limits the number of tries the user has to enter a password and informs them how many tries they have left if they still have tries remaining. Finally, if the user runs out of tries, the function informs them they can't try again until tomorrow.
